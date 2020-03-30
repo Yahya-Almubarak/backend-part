@@ -95,7 +95,7 @@ public class Controller {
 	  }
 	@CrossOrigin
 	@PutMapping("/scores")
-	  public ResponseEntity<Score> updateScore(@RequestBody Score score) {
+	  public ResponseEntity<Score>  updateScore(@RequestBody Score score) {
 	    Optional<Score> scoreData = service.findById(score.getId());
 
 	    if (scoreData.isPresent()) {
