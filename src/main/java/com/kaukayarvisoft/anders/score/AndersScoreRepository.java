@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-
+// Repository
 @RepositoryRestResource(collectionResourceRel = "scores", path = "scores")
 public interface AndersScoreRepository extends JpaRepository<Score, Long> {
 	Score save(Score score);
